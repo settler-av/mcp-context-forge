@@ -11,6 +11,7 @@ token.txt
 # ========================================
 # Virtual Environments
 # ========================================
+.venv
 .venv/
 venv/
 env/
@@ -70,6 +71,7 @@ pip-delete-this-directory.txt
 # ========================================
 # Testing & Coverage
 # ========================================
+htmlcov
 htmlcov/
 .tox/
 .nox/
@@ -269,8 +271,8 @@ coverage_re
 # Dependency tools
 .depsorter_cache.json
 .depupdate.*
-./depsort*
-./depupdate*
+depsort*
+depupdate*
 
 # Kubernetes
 minikube-*
@@ -286,11 +288,11 @@ cover.md
 *history.md
 
 # Visualization
-./snakefood.png
-./snakefood.svg
+snakefood.png
+snakefood.svg
 
 # Playground & attic
-./playground
+playground/
 .attic
 
 # Miscellaneous
@@ -303,3 +305,8 @@ dictionary.dic
 # Generated performance test files
 nginx.conf
 docker-compose.perf.yml
+
+# JMeter test results and local installation
+tests/jmeter/results/*.jtl
+tests/jmeter/results/*/
+.jmeter/
